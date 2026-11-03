@@ -2,7 +2,7 @@
 
 Current snapshot: Cyberpunk 2077 **2.5**, NightCoop **0.2.0 beta**, native **R3**, photo receiver **v5.1**, photo attachment candidate **v5.4**.
 
-The normal Equipment-EX outfit bridge has been confirmed working in co-op by the author. Hair and pose synchronization have also been confirmed in the tested setup. **Complete photo-mode EX/facial-accessory visibility is still experimental.** The latest v5.4 spider-accessory correction compiled but has not been visually verified. This is a development release, not a claim that every photo attachment is fixed.
+The normal Equipment-EX outfit bridge has been confirmed working in co-op by Eulalia. Hair and pose synchronization have also been confirmed in the tested setup. **Complete photo-mode EX/facial-accessory visibility is still experimental.** The latest v5.4 spider-accessory correction compiled but has not been visually verified. This is a development release, not a claim that every photo attachment is fixed.
 
 The port reads Equipment-EX's configured outfit rather than relying on whichever visual ItemObject happens to exist under the active camera. It preserves full item identity, prefers a recognized final EX placement slot, transmits exact photo slot mappings through the SDK, and keeps verified remote photo actors simulating while the world remains frozen. R3 also corrects a captured UTF-8 pose-name crash.
 
