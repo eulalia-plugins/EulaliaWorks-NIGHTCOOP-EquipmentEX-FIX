@@ -1,0 +1,99 @@
+{
+  "source_sha256": "447EE81CB5200DE2B372372A5C68DD36275C7B172EEEE009F56E5D5D606C55F7",
+  "patched_sha256": "42F531BDF2C7E26948FFF61CACF3990EF15F5F4BB2F7A39C6684768A2045CF80",
+  "changes": [
+    {
+      "va": "0x180605dad",
+      "offset": 6312365,
+      "old": "498bc14d8bd0488bfa488bd94c8b0a4c8bc0498bd2488d4c2440e89443b3ff90488b4c24404885c90f8490000000488b97880000004885d20f848000000033c048894424304533c04c894424380f57c0f30f7f4424504889442460488d44245048898424a8000000c7442470be000000c74424741b000000488d050cda8a004889442478488d0588dc8a004889842480000000488d44247048894424204c8d4c24504c8d442430e88784b2ff90488d4c2450e86cb2a6ff488b442430eb0233c0488903488d4c2440e84642b0ff",
+      "new": "488bd9498bf84c894c24700f57c00f11034885ff0f8498000000488b074885c00f848c0000004889442478e8f373b0ff4885c00f84790000004c8b00488bc848bac470afb706e7a7e641ff50104885c00f845c000000488bc848babf5d31edaa7e0f7de89b27b3ff4885c00f8441000000488bd048c744243000000000488d4424704889442438488d4424304889442450488d44244048894424584889442460488b4c24784c8bc34c8d4c2450e89185b2ffe91600000090909090909090909090909090909090909090909090",
+      "reason": "Separate read-only configured-outfit bridge; full initialized ItemID, original frame/unwind; no shared Api pointer changes"
+    },
+    {
+      "va": "0x1805fb13f",
+      "offset": 6268223,
+      "old": "488d4c2478",
+      "new": "488d4d8090",
+      "reason": "Caller full-size output buffer"
+    },
+    {
+      "va": "0x1805fb149",
+      "offset": 6268233,
+      "old": "837c247800",
+      "new": "837d800090",
+      "reason": "Validate actual record hash"
+    },
+    {
+      "va": "0x1805fb154",
+      "offset": 6268244,
+      "old": "807c247c00",
+      "new": "807d840090",
+      "reason": "Validate actual record length"
+    },
+    {
+      "va": "0x1805fb183",
+      "offset": 6268291,
+      "old": "0fb605a32cdf00488b5c247848895c246884c075144c8bc3498bd6488d4dc8e8395000000f1030eb694c8d442468488d55b8488d0d74e5f501e81f75acff488b45b8483b056ce5f50174060f107018eb414c8bc3498bd6488d4dd8e8fd4f00000f10300f29758066480f7ef085c0742248c1e82084c0741a4c8d4d804c8d442468488d542420488d0d20e5f501e85bf8ffff",
+      "new": "488b5d800f107580e98500000090909090909090909090909090909090909090909090909090909090909090909090909090909090909090909090909090909090909090909090909090909090909090909090909090909090909090909090909090909090909090909090909090909090909090909090909090909090909090909090909090909090909090909090909090",
+      "reason": "Use full equipped identity; preserve surrounding cache mutex lifetime"
+    },
+    {
+      "va": "0x1805fb264",
+      "offset": 6268516,
+      "old": "488b442478",
+      "new": "488b458090",
+      "reason": "Outfit diagnostic hash reads same full ID buffer"
+    },
+    {
+      "va": "0x1806086cb",
+      "offset": 6322891,
+      "old": "488d4c2420",
+      "new": "488d4d8790",
+      "reason": "Witness full-size buffer"
+    },
+    {
+      "va": "0x1806086d5",
+      "offset": 6322901,
+      "old": "488b5c2420",
+      "new": "488b5d8790",
+      "reason": "Witness reads full-size buffer"
+    },
+    {
+      "va": "0x180da7280",
+      "offset": 14313088,
+      "old": "00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "new": "4c8b00498b088b500cffca4d8b04d049c1e01849c1e818488d1562bc10004c8d1d5bb710004c8b0a41baffffffff410fb60184c074104430d041c1ea084533148349ffc1ebe841f7d24c89c8482b0248c1e0204c09d04c39c074114883c208488d05cabd10004839c275bac34c89c1c3",
+      "reason": "54-slot preference leaf selector, preserving vanilla fallback"
+    },
+    {
+      "va": "0x180600cf2",
+      "offset": 6291698,
+      "old": "488b00488b08",
+      "new": "e889657a0090",
+      "reason": "Prefer recognized EX slot over placementSlots[0]"
+    },
+    {
+      "va": "0x180bb2333",
+      "offset": 12261171,
+      "old": "410fbe09",
+      "new": "410fb609",
+      "reason": "Photo pose record CRC consumes unsigned UTF-8 bytes; fixes demonstrated out-of-bounds read"
+    },
+    {
+      "offset": 544,
+      "old": "7c62da00",
+      "new": "f062da00",
+      "reason": "Declare leaf within existing .text raw padding"
+    }
+  ],
+  "reader_start": "0x180605dad",
+  "reader_size": 183,
+  "reader_calls": [
+    "0x1805fb144",
+    "0x1806086d0",
+    "0x180608717"
+  ],
+  "unwind_unchanged": true,
+  "live_tested": false,
+  "selector_va": "0x180da7280"
+}
